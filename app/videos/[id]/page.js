@@ -1,6 +1,9 @@
-import { useRouter } from 'next/router';
+'use client';
+
 import { useEffect, useState } from 'react';
+import { useRouter } from 'next/navigation'; // Corrected import for useRouter
 import MuxPlayer from '@mux/mux-player-react';
+import Link from 'next/link'; // Added Link import
 
 export default function VideoPage() {
   const router = useRouter();
